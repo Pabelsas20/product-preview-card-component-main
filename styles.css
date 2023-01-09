@@ -154,7 +154,7 @@ body{
     }
     .card{
         flex-direction: column;
-        width: 343px;
+        max-width: 343px;
     }
     .content{
         width: 100%;
