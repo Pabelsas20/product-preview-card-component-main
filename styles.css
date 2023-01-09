@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+
+img{
+    max-width: 100%;
+}
+.img{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 1px);
+    background-color: var(--Cream);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    border-radius: 0.625rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.1875em;
+    color: var(--Dark-cyan);
+}
+
+.price2{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 1rem;
+    text-decoration: line-through;
+}
+
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark-grayish-blue);
+    font-size: 0.875em;
+}
+
+.top_txt{
+    margin-bottom: .7rem;
+    letter-spacing: 0.3125rem;
+}
+
+.title{
+    font-family: 'Fraunces', sans-serif;
+    margin-bottom: 1.3rem;
+    color: var(--Very-dark-blue);
+    font-size: 2.5em;
+    padding-right: 2.5rem;
+}
+
+
+.add_btn{
+    font-size: 0.875em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: var(--Dark-cyan);
+    border-radius: 0.625rem;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    transition: .5s;
+}
+
+.btn_container{
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;   
+}
+
+.icon{
+    padding-right: 1.25rem;
+    width: 37px;
+}
+
+.add_btn:hover{
+    background-color: #1A4031;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 375px){
+    img{
+        border-radius: 0.625rem 0 0 0.625rem;
+        width: 100%;
+    }
+    .img{
+        border-radius: 0.625rem 0 0 0.625rem;
+        width: 50%;
+    }
+    .card{
+        flex-direction: row;
+        width: 37.5rem;
+    }
+    .content{
+        width: 50%;
+        padding: 1.5rem 0 0 1rem;
+    }
+    .text{
+        padding-right: 2.5rem;
+    }
+    .title{
+        font-size: 40px;
+        padding-right: 2.5rem;
+    }
+    .prices{
+        margin: 1.5rem 0;
+    }
+    .add_btn{
+        padding: 15px 50px 15px 50px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    img{
+        border-radius: 0.625rem 0.625rem 0 0;
+        width: 100%;
+        content: url("./images/image-product-mobile.jpg");
+    }
+    .img{
+        border-radius: 0.625rem 0.625rem 0 0;
+        width: 100%;
+    }
+    .card{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .content{
+        width: 100%;
+        padding: 1rem 0 0 1rem;
+    }
+    .text{
+        padding-right: 2rem;
+    }
+    .title{
+        font-size: 40px;
+        padding-right: 2rem;
+    }
+    .prices{
+        margin: 1rem 0;
+    }
+    .add_btn{
+        margin-bottom: 0.625rem;
+        padding: 12px 80px 12px 80px;
+    }
+    
+}
